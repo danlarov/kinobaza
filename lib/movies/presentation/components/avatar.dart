@@ -38,7 +38,7 @@ class Avatar extends StatelessWidget {
         highlightColor: Colors.grey[800]!,
         child: const CircleAvatar(radius: AppSize.s20),
       ),
-      errorWidget: (_, _, _) => CircleAvatar(
+      errorWidget: (context, url, error) => CircleAvatar(
         radius: AppSize.s20,
         backgroundColor: Colors.grey[800],
         child: Text(

@@ -47,8 +47,8 @@ class ImageWithShimmer extends StatelessWidget {
       height: height,
       width: width,
       fit: BoxFit.cover,
-      placeholder: (_, _) => _buildPlaceholder(),
-      errorWidget: (_, _, _) => Container(
+      placeholder: (context, url) => _buildPlaceholder(),
+      errorWidget: (context, url, error) => Container(
         height: height,
         width: width,
         color: Colors.grey[850],

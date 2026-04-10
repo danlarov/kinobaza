@@ -83,7 +83,7 @@ Widget _getRatingBarIndicator(double rating) {
       rating: rating,
       itemSize: AppSize.s16,
       unratedColor: AppColors.primaryText,
-      itemBuilder: (_, _) {
+      itemBuilder: (context, index) {
         return const Icon(
           Icons.star_rate_rounded,
           color: AppColors.ratingIconColor,
